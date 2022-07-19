@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row header">
+  <div class="row header sticky-top bg-white">
    <div class="col-4">
     <h1>LocalTree</h1>
   </div>
@@ -18,19 +18,9 @@
   <div class="col-1">
     <button type="button" class="btn btn-danger">Sign Up</button>
    </div>
-<!-- 
-  <button type="button" class="btn btn-link">Link</button>
-  <button type="button" class="btn btn-link">Link</button>
-  <button type="button" class="btn btn-link">Link</button>
-  <button type="button" class="btn btn-link">Link</button>
-  <button type="button" class="btn btn-light">Light</button> -->
+
   </div>
-  
-  
-
   <div class="slick-wrapper">
-
- 
     <ngx-slick-carousel
         class="carousel"
         #slickModal="slick-carousel"
@@ -62,40 +52,10 @@
         
       </button>
     </div>
-  <!-- <div id="container">
-    <div
-      ng2-carouselamos
-      class="slides-wrapper"
-      [items]="images"
-      [width]="850"
-      [$prev]="prev"
-      [$next]="next"
-      [$item]="item"
-    >
-    </div>
   
-  
-    <ng-template #prev>
-      <img src="assets/Images/MaskGroup5.jpg" id="left" />
-    </ng-template>
-    <ng-template #next>
-      <img src="assets/Images/MaskGroup5.jpg" id="right" />
-    </ng-template>
-    <ng-template #item let-item let-i="index">
-        <div class="slide-items">
-            <img src="{{ item.name }}">
-          </div>
-    </ng-template>
-    <button class="btn-prev setPrev" (click)="prev()">
-			<i class="fa fa-arrow-circle-left"></i>
-		</button>
-		<button class="btn-next setNext" (click)="next()">
-			<i class="fa fa-arrow-circle-right"></i>
-		</button>
-</div> -->
 <div class="container">
   <div class="row">
-    <h2>Every Adventure starts with <span style="color: rgb(234, 26, 26);">LocalTree</span> </h2>
+    <h2>Every Adventure starts with <span style="color: rgb(233, 55, 55);">LocalTree</span> </h2>
     <h4>Book Private tours & activities with local worldwide</h4>
       <div class="col-3">
         <h6>Where Would You Like To Go?</h6>
@@ -112,7 +72,6 @@
       <div class="col-3 float-left">
         <h6>What Would You Like To Do?</h6>
         <div class="input-group mb-3">
-          <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
           <select class="form-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
             <option value="1">One</option>
@@ -124,19 +83,11 @@
       <div class="col-3">
         <h6>When Are You Available?</h6>
         <input type="date" class="form-control" placeholder="date" aria-label="Username" aria-describedby="basic-addon1">
-        <!-- <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Choose a date</mat-label>
-          <input matInput [matDatepicker]="picker">
-          <mat-datepicker-toggle matSuffix [for]="picker">
-            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
-          </mat-datepicker-toggle>
-          <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field> -->
+       
       </div>
       <div class="col-3">
         <h6>How Many Guests Are Going?</h6>
         <div class="input-group mb-3">
-          <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
           <select class="form-select" id="inputGroupSelect01">
             <option selected>Choose...</option>
             <option value="1">One</option>
@@ -148,11 +99,8 @@
             Search
           </button>
           </div>
-          
         </div>
       </div>
-   
-   
   </div>
   <div class="row">
     <p>Most Searched Plans:</p>
@@ -193,7 +141,7 @@
   </div>
 </div><br><br>
 <div class="container">
-  <h2><span style="color: rgb(234, 26, 26);">How Does</span>  It Works?</h2>
+  <h2><span style="color: rgb(233, 55, 55);">How Does</span>  It Works?</h2>
   <div class="row" *ngFor="let data of item">
     <div class="col-4"><img class="searchImg " src="{{data.name}}" alt="">
   <span>{{data.data}}
@@ -207,11 +155,11 @@
 </div>
 </div><br><br>
 <div class="container">
-  <h2><span style="color: rgb(234, 26, 26);">Popular</span> activities</h2>
+  <h2><span style="color: rgb(233, 55, 55);">Popular</span> activities</h2>
   <div class="slick-wrapper">
     <ngx-slick-carousel
         class="carousel"
-        #slickModal="slick-carousel"
+        #slickModal2="slick-carousel"
         [config]="slideConfig2"
         (init)="slickInit($event)"
         (breakpoint)="breakpoint($event)"
@@ -229,25 +177,25 @@
             width="100%"
             height="50%"
           />
-          <p>City tour<span style="color: rgb(234, 26, 26);"> in Ontario</span></p>
+          <p>City tour<span style="color: rgb(233, 55, 55);"> in Ontario</span></p>
           <h6>Paddleboarding Harbourside Adventure</h6>
         </div>
       </ngx-slick-carousel>
-      <button type="button" class="btn btn-dark" (click)="prev2()">
+      <button type="button" class="slick-arrow" (click)="prev2()">
         <i class="fa fa-arrow-circle-left"></i>
       </button>
-      <button type="button" class="btn btn-dark" (click)="next2()">
+      <button type="button" class="slick-arrow" (click)="next2()">
         <i class="fa fa-arrow-circle-right"></i>
       </button>
     </div>
 </div><br><br>
 <div class="container">
-  <h2><span style="color: rgb(234, 26, 26);">Best Experience</span> To Pick For This Tour</h2>
+  <h2><span style="color: rgb(233, 55, 55);">Best Experience</span> To Pick For This Tour</h2>
   <div class="slick-wrapper">
     <ngx-slick-carousel
         class="carousel"
-        #slickModal="slick-carousel"
-        [config]="slideConfig2"
+        #slickModal3="slick-carousel"
+        [config]="slideConfig3"
         (init)="slickInit($event)"
         (breakpoint)="breakpoint($event)"
         (afterChange)="afterChange($event)"
@@ -264,25 +212,25 @@
             width="100%"
             height="50%"
           />
-          <p>City tour<span style="color: rgb(234, 26, 26);"> in Ontario</span></p>
+          <p>City tour<span style="color: rgb(233, 55, 55);"> in Ontario</span></p>
           <h6>Paddleboarding Harbourside Adventure</h6>
         </div>
       </ngx-slick-carousel>
-      <button type="button" class="btn btn-dark" (click)="prev2()">
+      <button type="button" class="btn btn-dark" (click)="prev3()">
         <i class="fa fa-arrow-circle-left"></i>
       </button>
-      <button type="button" class="btn btn-dark" (click)="next2()">
+      <button type="button" class="btn btn-dark" (click)="next3()">
         <i class="fa fa-arrow-circle-right"></i>
       </button>
     </div>
 </div><br><br>
 <div class="container">
-  <h2><span style="color: rgb(234, 26, 26);">Experience For</span> Every Interest</h2>
+  <h2><span style="color: rgb(233, 55, 55);">Experience For</span> Every Interest</h2>
   <div class="slick-wrapper">
     <ngx-slick-carousel
         class="carousel"
         #slickModal="slick-carousel"
-        [config]="slideConfig2"
+        [config]="slideConfig4"
         (init)="slickInit($event)"
         (breakpoint)="breakpoint($event)"
         (afterChange)="afterChange($event)"
@@ -297,13 +245,16 @@
             src="{{data.name}}"
             alt=""
             width="100%"
-            height="50%"
+            height="100%"
             class="img-circle"
           />
-          <span style="color: rgb(234, 26, 26); text-align: center;">{{data.title}}</span>
+          <span style="color: rgb(233, 55, 55); text-align: center;">{{data.title}}</span>
         </div>
       </ngx-slick-carousel>
-      
+      <div class="row">
+        <div class="col-10"></div>
+        <div class="col-2"><span style="color: rgb(233, 55, 55); text-align: center;">View All Activities</span></div>
+      </div>
     </div>
   <!-- <div class="row">
    
@@ -317,7 +268,7 @@
             height="50%"
             class="img-circle"
           />
-          <p><span style="color: rgb(234, 26, 26);">{{data.title}}</span></p>
+          <p><span style="color: rgb(233, 55, 55);">{{data.title}}</span></p>
         </div>
       
      
@@ -325,7 +276,7 @@
 </div><br><br>
 <div class="container">
   <div class="row">
-    <h2><span style="color: rgb(234, 26, 26);">Becoming A Host</span></h2>
+    <h2><span style="color: rgb(233, 55, 55);">Becoming A Host</span></h2>
         <div class="col-6"
         >
           <img
@@ -336,24 +287,60 @@
           />
          
         </div>
-        <div class="col-6">
-            <h4>Eatwith events are always private & personal</h4>
+        <div class="col-6"><br>
+            <h6 style="color: rgb(179, 115, 219);">Eatwith events are always private & personal</h6>
             <span>
               If your group is made up of 2 or more, you can choose to private the Experience 
               for yourself and your loved once.
             </span><br><br>
-            <h4>We're committed to your well-being</h4>
+            <h6 style="color: rgb(233, 55, 55);">We're committed to your well-being</h6>
             <span>
               All necessary precautions have been taken so that you can attend our events with
               total peace of mind. 
             </span><br><br>
-            <h4>Hand-selected hosts</h4>
+            <h6 style="color: rgb(78, 226, 231);">Hand-selected hosts</h6>
             <span>
               Our team hand-picks each host to ensure that you have the best possible experience. 
             </span>
         </div>
   </div>
-  
+</div><br>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-5"></div>
+    <div class="col-2 ">
+      <button type="button" class="btn btn-danger">Become A Host</button>
+    </div>
+  </div>
+</div><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <img  src="assets/Images/family1.jpg"
+      alt=""
+      width="100%"
+      height="100%">
+    </div>
+    <div class="col-2 bg-light">
+      <h4 style="color: rgb(233, 55, 55);">Join Online Experiences</h4>
+      <span>
+        Our lorem ipsum tool was created with web designers, webmasters, and content marketers in mind. 
+      </span><br>
+      <button class="btn btn-danger">Search Experiences</button>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-3">
+      <img  src="assets/Images/family2.jpg"
+      alt=""
+      width="100%"
+      height="100%">
+    </div>
+    <div class="col-2 bg-light">
+      <h4 style="color: rgb(233, 55, 55);">Treat Your Loved Once To A Unique</h4>
+      <span>Our lorem ipsum tool was created with web designers, webmasters, and content marketers in mind.</span><br>
+      <button class="btn btn-danger">Join Local Tree</button>
+    </div>
+  </div>
 </div><br><br>
 </div>
 

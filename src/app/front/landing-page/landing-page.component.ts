@@ -9,6 +9,8 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 })
 export class LandingPageComponent implements OnInit {
   title = 'NG7Swiper';
+//   @Input() mainSlider: boolean;
+//   @Input() eventsSlider: boolean;
   @ViewChild('slickModal')
   slickModal!: SlickCarouselComponent;
   @ViewChild('slickModal2')
@@ -19,19 +21,18 @@ export class LandingPageComponent implements OnInit {
   images: Array<any> = []
   images2: Array<any> = []
   slideConfig = { slidesToShow: 1, slidesToScroll: 1, autoPlay: true};
-  slideConfig2 = { slidesToShow: 5, slidesToScroll: 5};
+  slideConfig2 = { slidesToShow: 5, slidesToScroll: 5, autoPlay: true};
+  slideConfig3 = { slidesToShow: 5, slidesToScroll: 5, autoPlay: true};
+  slideConfig4 = { slidesToShow: 5, slidesToScroll: 5};
   slides: any = [];
+  slides2: any = [];
+  slides3: any = [];
 	item: Array<any>=[];
 	state : Array<any>=[];
   constructor() { 
       this.images = [
         { name: 'assets/Images/MaskGroup5.jpg' },
         { name: 'assets/Images/hero.jpg' },
-        // { name: 'assets/Images/stock-photo.jpg' },
-        // { name: 'assets/Images/MaskGroup5.jpg' },
-        // { name: 'assets/Images/MaskGroup5.jpg' },
-        // { name: 'assets/Images/MaskGroup5.jpg' },
-        // { name: 'assets/Images/MaskGroup5.jpg' },
     ]
 	this.item = [
 		{ name: 'assets/Images/istockphoto.jpg' },
@@ -50,8 +51,6 @@ export class LandingPageComponent implements OnInit {
         { name: 'assets/Images/MaskGroup4.2.jpg' },
         { name: 'assets/Images/MaskGroup4.3.jpg' },
         { name: 'assets/Images/MaskGroup4.4.jpg' },
-        // { name: 'assets/Images/MaskGroup5.jpg' },
-        // { name: 'assets/Images/MaskGroup5.jpg' },
     ]
 
   }
@@ -61,7 +60,21 @@ export class LandingPageComponent implements OnInit {
   addSlide() {
 		this.slides.push({ img: 'http://placehold.it/350x150/777777' });
 	}
+	addSlide2() {
+		this.slides2.push({ img: 'http://placehold.it/350x150/777777' });
+	}
+	addSlide3() {
+		this.slides3.push({ img: 'http://placehold.it/350x150/777777' });
+	}
+	removeSlide2() {
+		this.slides2.length = this.slides2.length - 1;
+	}
+	removeSlide3() {
+		this.slides3.length = this.slides3.length - 1;
+	}
 	next() {
+		console.log("modal1",this.slickModal);
+		
 		this.slickModal.slickNext();
 	}
 
@@ -69,11 +82,20 @@ export class LandingPageComponent implements OnInit {
 		this.slickModal.slickPrev();
 	}
 	next2() {
+		console.log("modal2",this.slickModal2);
 		this.slickModal2.slickNext();
 	}
 
 	prev2() {
 		this.slickModal2.slickPrev();
+	}
+	next3() {
+		console.log("modal3",this.slickModal3);
+		this.slickModal3.slickNext();
+	}
+
+	prev3() {
+		this.slickModal3.slickPrev();
 	}
 	removeSlide() {
 		this.slides.length = this.slides.length - 1;
