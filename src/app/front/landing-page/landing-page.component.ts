@@ -23,7 +23,6 @@ export class LandingPageComponent implements OnInit {
   slideConfig = { slidesToShow: 1, slidesToScroll: 1, autoPlay: true};
   slideConfig2 = { slidesToShow: 5, slidesToScroll: 5, autoPlay: true};
   slideConfig3 = { slidesToShow: 5, slidesToScroll: 5, autoPlay: true};
-  slideConfig4 = { slidesToShow: 5, slidesToScroll: 5};
   slides: any = [];
   slides2: any = [];
   slides3: any = [];
