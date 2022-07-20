@@ -34,8 +34,8 @@ export class LandingPageComponent implements OnInit {
         { name: 'assets/Images/hero.jpg' },
     ]
 	this.item = [
-		{ name: 'assets/Images/istockphoto.jpg' },
-		{ data: 'Our lorem ipsum tool was created with web designers, webmasters, and content marketers in mind. If you need placeholder text for content that is not yet created, you can utilize this tool. This way, graphic designers, full stack developers…etc. can focus on other core elements, such as creating graphical elements and creating the page layout. Right before the webpage is set to launch.'}
+		{ name: 'assets/Images/search.png' },
+		{ data: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since'},
 	]
 	this.state = [
 		{ name: 'assets/Images/family1.jpg' ,title: 'Family Friendly'},
