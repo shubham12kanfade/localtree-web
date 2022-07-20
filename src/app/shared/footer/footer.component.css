@@ -1,0 +1,21 @@
+.btn1 {
+    /* background: #cb2027; */
+    border: none;
+    /* color: white; */
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+ .footer-text{
+    text-align: end !important;
+ }
+ .text_1{
+    font-size: small;
+    color: gray;
+ }
+ .text_2{
+    font-size: medium;
+    color: gray;
+ }

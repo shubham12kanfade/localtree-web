@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { FrontRoutingModule } from './front-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -17,7 +16,6 @@ import { MatInputModule } from '@angular/material/input';
   imports: [
     CommonModule,
     FrontRoutingModule,
-    Ng2CarouselamosModule,
     SlickCarouselModule,
     MatDatepickerModule,
     MatFormFieldModule,

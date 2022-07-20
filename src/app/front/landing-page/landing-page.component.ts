@@ -20,9 +20,9 @@ export class LandingPageComponent implements OnInit {
 
   images: Array<any> = []
   images2: Array<any> = []
-  slideConfig = { slidesToShow: 1, slidesToScroll: 1, autoPlay: true};
-  slideConfig2 = { slidesToShow: 5, slidesToScroll: 5, autoPlay: true};
-  slideConfig3 = { slidesToShow: 5, slidesToScroll: 5, autoPlay: true};
+  slideConfig = { slidesToShow: 1, slidesToScroll: 1,};
+  slideConfig2 = { slidesToShow: 5, slidesToScroll: 5, };
+  slideConfig3 = { slidesToShow: 5, slidesToScroll: 5, };
   slides: any = [];
   slides2: any = [];
   slides3: any = [];
@@ -59,18 +59,18 @@ export class LandingPageComponent implements OnInit {
   addSlide() {
 		this.slides.push({ img: 'http://placehold.it/350x150/777777' });
 	}
-	addSlide2() {
-		this.slides2.push({ img: 'http://placehold.it/350x150/777777' });
-	}
-	addSlide3() {
-		this.slides3.push({ img: 'http://placehold.it/350x150/777777' });
-	}
-	removeSlide2() {
-		this.slides2.length = this.slides2.length - 1;
-	}
-	removeSlide3() {
-		this.slides3.length = this.slides3.length - 1;
-	}
+	// addSlide2() {
+	// 	this.slides2.push({ img: 'http://placehold.it/350x150/777777' });
+	// }
+	// addSlide3() {
+	// 	this.slides3.push({ img: 'http://placehold.it/350x150/777777' });
+	// }
+	// removeSlide2() {
+	// 	this.slides2.length = this.slides2.length - 1;
+	// }
+	// removeSlide3() {
+	// 	this.slides3.length = this.slides3.length - 1;
+	// }
 	next() {
 		console.log("modal1",this.slickModal);
 		
