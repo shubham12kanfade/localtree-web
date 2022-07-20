@@ -1,4 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif !important;
+}
 #container {
     width: 100% !important;
     height: 80% !important;
@@ -10,12 +17,7 @@
     width: 70%;
     margin : auto;
 }
-/* .slide-items{
-    margin-right: 10px;
-}
-img{
-    width: 210px;
-} */
+
 
 .slick-wrapper{
     width: 100%;
@@ -26,15 +28,189 @@ img{
 .slick-prev:before, .slick-next:before {
     color: black!important;
 }
-/* .header{
-    margin-top: 0 0 0 ;
-} */
-/* .container-fluid{
+
+.logo{
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.header{
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-signup{
+    background-color: #F2294E;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.basket-icon{
+    background-color: transparent;
+    border: none;
+}
+.basket-icon img{
+    height: 25px;
+   }
+   .navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;
+   }
+   .navbar-dark .navbar-nav .nav-link.active{
+    color: #F2294E;
+    font-weight: bold;
+   }
+   .top-box{
     position: absolute;
-} */
-.btn-sm{
-    margin: 3px 27px 0px -64px;;
+    top: 30%;    
+    width: 100%;
+   }
+   .top-box h2{
+    font-size: 50px;
+    font-weight:600;
+    color: #ffffff;
+   }
+   .top-box h2 span{
+    color: #F2294E;
+   }
+   .top-box h4{
+    font-size: 30px;
+    font-weight:300;
+    color: #ffffff;
+   }
+   .top-box1{
+    background-color: rgba(250, 244, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+
+   }
+   .tag{
+    height: 44px;
+    border-radius: 10px;
+    padding: 0px 15px;
+    border: none;
+    margin-right: 5px;
+     }
+     .tag:nth-of-type(odd) {
+        background: #FBEBEE;
+     }
+     .tag:nth-of-type(even) {
+        background: #EFF7FF ;
+     }
+    .main-title{
+    font-size: 35px;
+    color: #F2294E;
+    font-weight: 600;
+    text-transform: capitalize;
+   
 }
-.searchImg{
-    width: 20%;
+.main-title span{
+       color: #222222;
 }
+.howitworks-box{
+    color: #5B5B5B;
+}
+.searchImg {
+    width: 70px;
+    height: 70px;
+    background: rgba(91,91,91,0.07);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.searchImg img{
+    height: 30px;
+    width: 30px;
+}
+.text-pink{
+    color: #F2294E;
+}
+.popular-act .slick-initialized .slick-slide{
+    margin-right: 10px;
+    position: relative;
+}
+.popular-act .slide p{
+margin: 10px 0px 0px 0px;
+}
+.popular-act .slide h6{
+   color: #222222;
+   font-weight: 700;
+   font-size: 15px;
+    }
+    .price-tag{
+        font-size: 14px;
+        color: #F2294E;
+        font-weight: 600;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 25px #00000029;
+        position: absolute;
+        bottom: 115px;
+        right: 10px;
+        padding: 6px;
+        border-radius: 5px;
+    }
+    .rating{
+        font-size: 14px;
+        color: #F2294E;
+    }
+    .rating span{
+        font-size: 14px;
+        color: #222222;
+    }
+    section{
+        margin: 50px 0px;
+    }
+    .experience-block{
+     text-align: center;
+    }
+    .experience-block h5{
+        color: #F2294E;
+       }
+    .experience-block img{
+       /* height: 200px;
+       width: 200px; */
+        border-radius: 50%;
+        box-shadow: 0px 10px 20px #00000026;
+        margin-bottom: 20px;
+    }
+    .host{
+        background: rgba(91,91,91,0.04);
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;      
+        margin-bottom: 10px;
+        color: #5b5b5b;
+    }
+    .host p{
+        margin-bottom: 0px;
+    }
+    .host1 h5{
+        color: #A86DAC;
+    }
+    .host2 h5{
+        color: #F2294E;
+    }
+    .host3 h5{
+        color: #29D0F2;
+    }
+    .content-box{
+        background: rgba(91,91,91,0.1);
+        padding: 20px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .content-box h5{
+        font-size: 18px;
+        color: #F2294E;
+    }
+    .content-main img{
+        border-radius: 10px 0px 0px 10px;
+    }
+    .btn-general{
+        background-color: #F2294E;
+        color: #ffffff;
+        font-weight: 500;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
