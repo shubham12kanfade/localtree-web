@@ -210,12 +210,12 @@
             <div class="rating">4.5/5<i class="fa fa-star"></i><span>(5)</span></div>
           </div>
         </ngx-slick-carousel>
-        <!-- <button type="button" class="slick-arrow" (click)="prev2()">
+        <button type="button" class="slick-arrow" (click)="prev2()">
           <i class="fa fa-arrow-circle-left"></i>
         </button>
         <button type="button" class="slick-arrow" (click)="next2()">
           <i class="fa fa-arrow-circle-right"></i>
-        </button> -->
+        </button>
       </div>
     </div>
     </section>
@@ -226,8 +226,8 @@
         <div class="slick-wrapper">
           <ngx-slick-carousel
               class="carousel"
-              #slickModal2="slick-carousel"
-              [config]="slideConfig2"
+              #slickModal3="slick-carousel"
+              [config]="slideConfig3"
               (init)="slickInit($event)"
               (breakpoint)="breakpoint($event)"
               (afterChange)="afterChange($event)"
@@ -235,7 +235,7 @@
             >
               <div
                 ngxSlickItem
-                *ngFor="let data of images2"
+                *ngFor="let data of images3"
                 class="slide"
               >
                 <img
@@ -250,12 +250,12 @@
                 <div class="rating">4.5/5<i class="fa fa-star"></i><span>(5)</span></div>
               </div>
             </ngx-slick-carousel>
-            <!-- <button type="button" class="slick-arrow" (click)="prev2()">
+            <button type="button" class="slick-arrow" (click)="prev3()">
               <i class="fa fa-arrow-circle-left"></i>
             </button>
-            <button type="button" class="slick-arrow" (click)="next2()">
+            <button type="button" class="slick-arrow" (click)="next3()">
               <i class="fa fa-arrow-circle-right"></i>
-            </button> -->
+            </button>
           </div>
         </div>
         </section>
@@ -447,6 +447,7 @@
       </div>
     </div>
     </section>
+    <app-footer></app-footer>
 
 
 </div>

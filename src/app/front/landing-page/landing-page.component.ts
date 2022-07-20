@@ -20,9 +20,59 @@ export class LandingPageComponent implements OnInit {
 
   images: Array<any> = []
   images2: Array<any> = []
+  images3: Array<any> = []
   slideConfig = { slidesToShow: 1, slidesToScroll: 1,};
-  slideConfig2 = { slidesToShow: 5, slidesToScroll: 5, };
-  slideConfig3 = { slidesToShow: 5, slidesToScroll: 5, };
+  slideConfig2 = { slidesToShow: 4, slidesToScroll: 4, responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]};
+  slideConfig3 = { slidesToShow: 4, slidesToScroll: 4, responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]};
   slides: any = [];
   slides2: any = [];
   slides3: any = [];
@@ -51,6 +101,13 @@ export class LandingPageComponent implements OnInit {
         { name: 'assets/Images/MaskGroup4.3.jpg' },
         { name: 'assets/Images/MaskGroup4.4.jpg' },
     ]
+	this.images3 = [
+		{ name: 'assets/Images/MaskGroup4.jpg'  },
+        { name: 'assets/Images/MaskGroup4.1.jpg' },
+        { name: 'assets/Images/MaskGroup4.2.jpg' },
+        { name: 'assets/Images/MaskGroup4.3.jpg' },
+        { name: 'assets/Images/MaskGroup4.4.jpg' },
+    ]
 
   }
 
@@ -59,21 +116,9 @@ export class LandingPageComponent implements OnInit {
   addSlide() {
 		this.slides.push({ img: 'http://placehold.it/350x150/777777' });
 	}
-	// addSlide2() {
-	// 	this.slides2.push({ img: 'http://placehold.it/350x150/777777' });
-	// }
-	// addSlide3() {
-	// 	this.slides3.push({ img: 'http://placehold.it/350x150/777777' });
-	// }
-	// removeSlide2() {
-	// 	this.slides2.length = this.slides2.length - 1;
-	// }
-	// removeSlide3() {
-	// 	this.slides3.length = this.slides3.length - 1;
-	// }
+	
 	next() {
 		console.log("modal1",this.slickModal);
-		
 		this.slickModal.slickNext();
 	}
 
@@ -94,7 +139,7 @@ export class LandingPageComponent implements OnInit {
 	}
 
 	prev3() {
-		this.slickModal3.slickPrev();
+		this.slickModal3.slickPrev()
 	}
 	removeSlide() {
 		this.slides.length = this.slides.length - 1;
