@@ -1,41 +1,9 @@
 <div class="container-fluid">
-       <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse header" id="navbarTogglerDemo01">
-            <a class="navbar-brand logo" href="#">Local tree</a>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Experiences</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Become A Host</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Spanish / Catalan
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">Spanish</a></li>
-                  <li><a class="dropdown-item" href="#">Catalan</a></li>                 
-                </ul>
-               
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">login</a>
-              </li>
-              <button class="btn btn-signup ps-4 pe-4" type="submit">Sign Up</button>
-              <button href="#" class="basket-icon"><img src="../../../assets/Images/basket.png"></button>
-            </ul>
-           
-          </div>
-        </div>
-      </nav>
+ <div class="row">
+      
      
 
-  <div class="slick-wrapper">
+  <!-- <div class="slick-wrapper">
     <ngx-slick-carousel
         class="carousel"
         #slickModal="slick-carousel"
@@ -66,14 +34,48 @@
         <i class="fa fa-arrow-circle-right"></i>
         
       </button>
-    </div>
-  <div class="top-box">
+    </div> -->
+    <div class="top-box">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse header" id="navbarTogglerDemo01">
+            <a class="navbar-brand logo" href="#">Local tree</a>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Experiences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Become A Host</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Spanish / Catalan
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Spanish</a></li>
+                  <li><a class="dropdown-item" href="#">Catalan</a></li>                 
+                </ul>
+               
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">login</a>
+              </li>
+              <button class="btn btn-signup ps-4 pe-4" type="submit">Sign Up</button>
+              <button href="#" class="basket-icon"><img src="../../../assets/Images/basket.png"><span>3</span></button>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
 <div class="container">
   <h2>Every Adventure starts with <span>LocalTree</span> </h2>
   <h4>Book private tours & activities with locals worldwide</h4>
-  <div class="top-box1">
+  <div class="top-box1 mt-5">
   <div class="row">    
-      <div class="col-3">
+      <div class="col-md-3">
         <h6>Where Would You Like To Go?</h6>
         <div class="input-group mb-3">
           <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
@@ -85,7 +87,7 @@
           </select>
         </div>
       </div>
-      <div class="col-3 float-left">
+      <div class="col-md-3">
         <h6>What Would You Like To Do?</h6>
         <div class="input-group mb-3">
           <select class="form-select" id="inputGroupSelect01">
@@ -96,12 +98,12 @@
           </select>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 mb-3">
         <h6>When Are You Available?</h6>
         <input type="date" class="form-control" placeholder="date" aria-label="Username" aria-describedby="basic-addon1">
        
       </div>
-      <div class="col-3">
+      <div class="col-md-3">
         <h6>How Many Guests Are Going?</h6>
         <div class="input-group mb-3">
           <select class="form-select" id="inputGroupSelect01">
@@ -111,7 +113,7 @@
             <option value="3">Three</option>
           </select>
           <div>
-            <button type="button" class="btn btn-danger btn-sm">
+            <button type="button" class="btn btn-search ms-2">
             Search
           </button>
           </div>
@@ -132,9 +134,7 @@
         <button type="button" class="tag">Tag One</button>
         <button type="button" class="tag">Tag One</button>
         <button type="button" class="tag">Tag One</button>
-        <button type="button" class="tag">Tag One</button>
-       
-        
+      
 
       </div>
     
@@ -148,19 +148,19 @@
   <h2 class="main-title">How Does<span> It Works?</span></h2>
 
   <div class="row mt-4 mb-4">
-    <div class="col-4 text-center">
+    <div class="col-md-4 text-center">
       <div class="searchImg">
       <img src="../../../assets/Images/search.png">
     </div>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
     </div>
-    <div class="col-4 text-center">
+    <div class="col-md-4 text-center">
       <div class="searchImg">
       <img src="../../../assets/Images/search.png">
     </div>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
     </div>
-    <div class="col-4 text-center">
+    <div class="col-md-4 text-center">
       <div class="searchImg">
       <img src="../../../assets/Images/search.png">
     </div>
@@ -207,15 +207,17 @@
             <div class="price-tag">£40 / Adult</div>
             <p>City tour <span class="text-pink">in Ontario</span></p>
             <h6>Paddleboarding Harbourside Adventure</h6>
-            <div class="rating">4.5/5<i class="fa fa-star"></i><span>(5)</span></div>
+            <div class="rating">4.5/5 <i class="fa fa-star"></i><span> (5)</span></div>
           </div>
         </ngx-slick-carousel>
+        <div class="slider-arrows">
         <button type="button" class="slick-arrow" (click)="prev2()">
-          <i class="fa fa-arrow-circle-left"></i>
+          <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
         </button>
         <button type="button" class="slick-arrow" (click)="next2()">
-          <i class="fa fa-arrow-circle-right"></i>
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         </button>
+      </div>
       </div>
     </div>
     </section>
@@ -247,15 +249,17 @@
                 <div class="price-tag">£40 / Adult</div>
                 <p>City tour <span class="text-pink">in Ontario</span></p>
                 <h6>Paddleboarding Harbourside Adventure</h6>
-                <div class="rating">4.5/5<i class="fa fa-star"></i><span>(5)</span></div>
+                <div class="rating">4.5/5 <i class="fa fa-star"></i><span> (5)</span></div>
               </div>
             </ngx-slick-carousel>
-            <button type="button" class="slick-arrow" (click)="prev3()">
-              <i class="fa fa-arrow-circle-left"></i>
-            </button>
-            <button type="button" class="slick-arrow" (click)="next3()">
-              <i class="fa fa-arrow-circle-right"></i>
-            </button>
+            <div class="slider-arrows">
+              <button type="button" class="slick-arrow" (click)="prev3()">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="slick-arrow" (click)="next3()">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
           </div>
         </div>
         </section>
@@ -271,19 +275,19 @@
               </div>  
               <div class="col-md-2 experience-block">              
                 <img src="../../../assets/Images/MaskGroup4.4.jpg" class="img-fluid">
-                <h5>Day Trip</h5>             
+                <h5>Food Tours</h5>             
               </div>  
               <div class="col-md-2 experience-block">              
                 <img src="../../../assets/Images/MaskGroup4.1.jpg" class="img-fluid">
-                <h5>Day Trip</h5>             
+                <h5>Family Friendly</h5>             
               </div>  
               <div class="col-md-2 experience-block">              
                 <img src="../../../assets/Images/MaskGroup4.2.jpg" class="img-fluid">
-                <h5>Day Trip</h5>             
+                <h5>Night Tour</h5>             
               </div>  
               <div class="col-md-2 experience-block">              
                 <img src="../../../assets/Images/MaskGroup4.3.jpg" class="img-fluid">
-                <h5>Day Trip</h5>             
+                <h5>Bike Tour</h5>             
               </div>  
 
 
@@ -448,7 +452,7 @@
     </div>
     </section>
     <app-footer></app-footer>
-
+  </div>
 
 </div>
 
