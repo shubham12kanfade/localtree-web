@@ -46,31 +46,37 @@ body{
     color: #ffffff;
     border-radius: 20px;
 }
-.basket-icon{
-    background-color: transparent;
-    border: none;
-    position: relative;
+.btn-signup:hover{
+    background-color: #fff;
+    color: #F2294E;
 }
-.basket-icon img{
-    height: 25px;
+.basket-icon{
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.basket-icon span{
+    background-color: #ffffff;
+    color: #F2294E;
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    border-radius: 50%;
+    line-height: 16px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    bottom: 0;
+    right: -5px;
    }
    .navbar-dark .navbar-nav .nav-link{
     color: #ffffff;
    }
-   .basket-icon span{
-    background-color: #ffffff;
-    color: #F2294E;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    border-radius: 50%;
-    line-height: 19px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 500;   
-    bottom: 0;
-    right: -5px;
-   }
+  
    .navbar-dark .navbar-nav .nav-link.active{
     color: #F2294E;
     font-weight: bold;
@@ -153,9 +159,7 @@ body{
     position: relative;
    
 }
-.popular-act .slick-initialized .slick-slide:last-child{
-  
-}
+
 .popular-act .slide p{
 margin: 10px 0px 0px 0px;
 }
@@ -185,10 +189,13 @@ margin: 10px 0px 0px 0px;
         color: #222222;
     }
     section{
-        margin: 50px 0px;
+        margin: 30px 0px;
     }
     .experience-block{
      text-align: center;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
     }
     .experience-block h5{
         color: #F2294E;
@@ -220,25 +227,35 @@ margin: 10px 0px 0px 0px;
     .host3 h5{
         color: #29D0F2;
     }
+    .content-wrap{
+       padding: 30px;
+      
+    }
+   
     .content-box{
+        min-height: 300px;
         background: rgba(91,91,91,0.1);
-        padding: 20px;
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 10px;
+        margin-right: auto;
     }
     .content-box h5{
         font-size: 18px;
         color: #F2294E;
     }
-    .content-main img{
-        border-radius: 10px 0px 0px 10px;
-    }
+  .content-img{
+    background:url('../../../assets/Images/MaskGroup5.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+    
+  }
     .btn-general{
         background-color: #F2294E;
         color: #ffffff;
         font-weight: 500;
         text-align: center;
         text-transform: capitalize;
-        padding: 10px 20px;
+        padding: 5px 15px;
         border-radius: 25px;
     }
     .slider-arrows{
@@ -266,8 +283,31 @@ position: relative;
 
 
     @media (max-width: 768px) { 
-        
+        section{
+            margin: 20px 0px;
+        }
         .top-box{
             position: relative;
         }
+        .content-img{
+            min-height: 250px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .content-box{
+           
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .host{
+            text-align: center;
+        }
+        .host1{
+            margin-top: 10px;
+        }
+        .experience-block{
+           
+            display: flex;
+            flex-direction: column;
+           
+           }
      }
