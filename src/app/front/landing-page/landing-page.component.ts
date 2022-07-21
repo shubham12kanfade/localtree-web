@@ -22,12 +22,12 @@ export class LandingPageComponent implements OnInit {
   images2: Array<any> = []
   images3: Array<any> = []
   slideConfig = { slidesToShow: 1, slidesToScroll: 1,};
-  slideConfig2 = { slidesToShow: 4, slidesToScroll: 4, responsive: [
+  slideConfig2 = { slidesToShow: 5, slidesToScroll: 1, infinite: true, responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true
       }
     },
@@ -35,7 +35,7 @@ export class LandingPageComponent implements OnInit {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
@@ -46,12 +46,12 @@ export class LandingPageComponent implements OnInit {
       }
     }
   ]};
-  slideConfig3 = { slidesToShow: 4, slidesToScroll: 4, responsive: [
+  slideConfig3 = { slidesToShow: 5, slidesToScroll: 1, infinite: true,responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true
       }
     },
@@ -59,7 +59,7 @@ export class LandingPageComponent implements OnInit {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {
@@ -100,6 +100,7 @@ export class LandingPageComponent implements OnInit {
         { name: 'assets/Images/MaskGroup4.2.jpg' },
         { name: 'assets/Images/MaskGroup4.3.jpg' },
         { name: 'assets/Images/MaskGroup4.4.jpg' },
+		{ name: 'assets/Images/MaskGroup4.2.jpg' },
     ]
 	this.images3 = [
 		{ name: 'assets/Images/MaskGroup4.jpg'  },
@@ -107,6 +108,7 @@ export class LandingPageComponent implements OnInit {
         { name: 'assets/Images/MaskGroup4.2.jpg' },
         { name: 'assets/Images/MaskGroup4.3.jpg' },
         { name: 'assets/Images/MaskGroup4.4.jpg' },
+		{ name: 'assets/Images/MaskGroup4.2.jpg' },
     ]
 
   }
