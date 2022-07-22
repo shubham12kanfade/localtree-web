@@ -24,6 +24,7 @@ body{
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    
 }
 
 .slick-prev:before, .slick-next:before {
@@ -61,6 +62,7 @@ body{
 }
 .basket-icon span{
     background-color: #ffffff;
+    box-shadow: 0px 0px 25px #00000029;
     color: #F2294E;
     height: 17px;
     width: 17px;
@@ -76,11 +78,13 @@ body{
    .navbar-dark .navbar-nav .nav-link{
     color: #ffffff;
    }
-  
-   .navbar-dark .navbar-nav .nav-link.active{
+   .navbar-dark .navbar-nav .nav-link:hover{
     color: #F2294E;
-    font-weight: bold;
    }
+   .navbar-dark .navbar-nav .nav-link.active{
+    color: #F2294E;   
+   }
+
    .top-box{
     background:url('../../../assets/Images/MaskGroup5.jpg');
     background-position: center;
@@ -206,6 +210,11 @@ margin: 10px 0px 0px 0px;
         border-radius: 50%;
         box-shadow: 0px 10px 20px #00000026;
         margin-bottom: 20px;
+        transition: transform .5s ease;
+    }
+    .experience-block img:hover{
+         transform: scale(1.1);
+         cursor: pointer;
     }
     .host{
         background: rgba(91,91,91,0.04);
@@ -258,6 +267,15 @@ margin: 10px 0px 0px 0px;
         padding: 5px 15px;
         border-radius: 25px;
     }
+    .btn-general:hover{
+        background-color: transparent;
+        color: #F2294E;
+        border: 1px solid #F2294E;
+    }
+    .btn-pink{
+        background-color: #F2294E;
+        color: #ffffff;
+    }
     .slider-arrows{
         display: flex;
     justify-content: space-between;
@@ -281,6 +299,40 @@ position: relative;
         color: #F2294E;
     }
 
+    .navbar-scrolled{
+        background-color: #ffffff !important;
+        box-shadow: 0px 0px 25px #00000029;
+    
+    }
+    .navbar-scrolled .logo{
+        color: #F2294E;
+    }
+    .navbar-scrolled .nav-link{
+        color: #F2294E !important;
+       }
+    .navbar-scrolled .btn-signup:hover{
+        background-color: #fff;
+        color: #F2294E;
+        border: 1px solid #F2294E;
+       }
+       .navbar-scrolled  .basket-icon{
+        color: #F2294E;
+       }
+       .navbar-scrolled .basket-icon span{
+        background-color: #F2294E;
+        color: #ffffff;
+       }
+       .popular-act .slick-slide img{
+        transition: transform .5s ease;
+        overflow: hidden;
+       }
+       .popular-act .slick-slide img:hover{
+         transform: scale(1.1);
+         cursor: pointer;
+       }
+
+      
+       /* -----media query for responsive ------ */
 
     @media (max-width: 768px) { 
         section{

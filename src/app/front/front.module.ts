@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCommonModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { SharedModule } from '../shared/shared.module';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SharedModule } from '../shared/shared.module';
     MatFormFieldModule,
     MatCommonModule,
     MatInputModule,
-    SharedModule
+    SharedModule,
+    NgxDaterangepickerMd.forRoot()
   ]
 })
 export class FrontModule { }

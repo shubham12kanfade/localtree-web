@@ -14,9 +14,14 @@
  }
  .footer h6{
    color: #222222;
+   font-size: 15px;
  }
  .text-pink{
    color: #F2294E;
+}
+.seedling{
+   color: #30A223;
+   margin-left: 3px;
 }
 .bottom-footer-liks a{
    text-transform: capitalize;
@@ -31,15 +36,24 @@
 .bottom-footer-liks h6{
 color: #5b5b5b;
 }
-.social-icons .btn{
+.social-icons a{
    height: 40px;
     width: 40px;
     background-color: #F2294E;
     border-radius: 50%;
     color: #fff;
-    line-height: 17px;  
+    line-height: 25px;  
     margin-right: 8px;
 }
-.social-icons .btn:last-child{
+.social-icons a:last-child{
    margin-right: 0px;
+}
+.social-icons a:hover{
+   background-color: transparent;
+   border: 1px solid #F2294E;
+   color: #F2294E;
+}
+.btn-pink{
+   background-color: #F2294E;
+   color: #ffffff;
 }
