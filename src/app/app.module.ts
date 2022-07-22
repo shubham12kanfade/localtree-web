@@ -10,7 +10,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +25,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    
+    NgxDaterangepickerMd.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

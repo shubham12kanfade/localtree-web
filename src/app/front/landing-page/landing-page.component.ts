@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Ng2CarouselamosComponent } from 'ng2-carouselamos';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -9,15 +9,15 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 })
 export class LandingPageComponent implements OnInit {
   title = 'NG7Swiper';
-//   @Input() mainSlider: boolean;
-//   @Input() eventsSlider: boolean;
+  
   @ViewChild('slickModal')
   slickModal!: SlickCarouselComponent;
   @ViewChild('slickModal2')
   slickModal2!: SlickCarouselComponent;
   @ViewChild('slickModal3')
   slickModal3!: SlickCarouselComponent;
-
+  @ViewChild('navbar', { static: false }) navbar!: ElementRef;
+  // selected!: { startDate: Date; endDate: Date; };
   images: Array<any> = []
   images2: Array<any> = []
   images3: Array<any> = []
@@ -69,13 +69,9 @@ export class LandingPageComponent implements OnInit {
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+    
   ]};
   slides: any = [];
-  slides2: any = [];
-  slides3: any = [];
 	item: Array<any>=[];
 	state : Array<any>=[];
   constructor() { 
@@ -115,6 +111,18 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  @HostListener('window:scroll', []) onWindowScroll() {
+      if (window.pageYOffset > 100) {
+          this.navbar.nativeElement.classList.add('navbar-scrolled');
+          
+      } else {
+          this.navbar.nativeElement.classList.remove('navbar-scrolled');
+      }
+  }
+  
+
   addSlide() {
 		this.slides.push({ img: 'http://placehold.it/350x150/777777' });
 	}
@@ -162,4 +170,6 @@ export class LandingPageComponent implements OnInit {
 	beforeChange(e: any) {
 		console.log('beforeChange');
 	}
+
+
 }

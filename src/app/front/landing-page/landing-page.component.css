@@ -311,3 +311,7 @@ position: relative;
            
            }
      }
+
+.navbar-scrolled{
+    background-color: #000 !important;
+}
