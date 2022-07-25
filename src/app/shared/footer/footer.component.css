@@ -6,7 +6,7 @@
  }
  .footer a{
   display: block;
-  color: #5b5b5b;
+  color: #000000;
   text-decoration: none;
   text-transform: capitalize;
   margin-bottom: 5px;
@@ -17,7 +17,7 @@
    font-size: 15px;
  }
  .text-pink{
-   color: #F2294E;
+   color: #FF855F;
 }
 .seedling{
    color: #30A223;
@@ -34,12 +34,12 @@
    margin-right: 0px;
 }
 .bottom-footer-liks h6{
-color: #5b5b5b;
+color: #000000;
 }
 .social-icons a{
    height: 40px;
     width: 40px;
-    background-color: #F2294E;
+    background-color: #FF855F;
     border-radius: 50%;
     color: #fff;
     line-height: 25px;  
@@ -50,10 +50,10 @@ color: #5b5b5b;
 }
 .social-icons a:hover{
    background-color: transparent;
-   border: 1px solid #F2294E;
-   color: #F2294E;
+   border: 1px solid #FF855F;
+   color: #FF855F;
 }
 .btn-pink{
-   background-color: #F2294E;
+   background-color: #FF855F;
    color: #ffffff;
 }
